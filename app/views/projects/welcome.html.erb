@@ -83,19 +83,87 @@
     </section>
 
 
+<!-- features list -->
+    
+    <div class="container" id="cnt1">
+        <div class="row feature">
+            <div class="col-md-4">
+                <div>
+                    <img src="http://lorempixel.com/200/200/city/1/" alt="Texto Alternativo" class="img-circle img-thumbnail">
+                    <h2>Admin Portal</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consequat, urna id vestibulum viverra, 
+                           tellus felis rutrum erat, sit amet ultrices orci urna sit amet nunc. 
+                           Fusce ut fringilla sem. Curabitur eget est vitae nulla eleifend ullamcorper et laoreet odio. 
+                           Duis condimentum feugiat sollicitudin. Sed non lacinia turpis. 
+                           Proin gravida turpis consequat porta condimentum. 
+                           Nam consequat ultricies elit nec consectetur.                        
+                    </p>
+                    <a href="#" class="btn btn-success lower">See Feature details</a>
+                </div>
+            </div>
 
+            <div class="col-md-4">
+                <div>
+                    <img src="http://lorempixel.com/200/200/city/2/" alt="Texto Alternativo" class="img-circle img-thumbnail">
+                    <h2>Project Portfolio</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consequat, urna id vestibulum viverra, 
+                          tellus felis rutrum erat, sit amet ultrices orci urna sit amet nunc. 
+                          Fusce ut fringilla sem. Curabitur eget est vitae nulla eleifend ullamcorper et laoreet odio. 
+                          Duis condimentum feugiat sollicitudin. Sed non lacinia turpis. 
+                          Proin gravida turpis consequat porta condimentum. 
+                          Nam consequat ultricies elit nec consectetur.       
+                    </p>
+                    <a href="#" class="btn btn-success lower">See Feature details</a>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div>
+                    <img src="http://lorempixel.com/200/200/city/3/" alt="Texto Alternativo" class="img-circle img-thumbnail">
+                    <h2>Personal Website</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consequat, urna id vestibulum viverra, 
+                           tellus felis rutrum erat, sit amet ultrices orci urna sit amet nunc. 
+                           Fusce ut fringilla sem. Curabitur eget est vitae nulla eleifend ullamcorper et laoreet odio. 
+                           Duis condimentum feugiat sollicitudin. Sed non lacinia turpis. 
+                           Proin gravida turpis consequat porta condimentum. 
+                           Nam consequat ultricies elit nec consectetur.       
+                    </p>
+                    <a href="#" class="btn btn-success lower">See Feature details</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- end features list -->
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- carousel for pictures -->
 
     <section id="carousel" class="carousel-test">
         <div class="container">
         <div id="allSlides" style="display:none;">
             <div class="item" data-project='1'>
-                <img src="http://placehold.it/300x200/888&text=Item 1 Project 1" />
+                <%= image_tag("basement-1.jpg") %>
             </div>
             <div class="item" data-project='1'>
-                <img src="http://placehold.it/300x200/aaa&text=Item 2 Project 1" />
+               <%= image_tag("basement-2.jpg") %>
             </div>
             <div class="item" data-project='1'>
-                <img src="http://placehold.it/300x200/444&text=Item 3 Project 1" />
+               <%= image_tag("basement-3.jpg") %>
             </div>
             <div class="item" data-project='2'>
                 <img src="http://placehold.it/300x200/888&text=Item 1 Project 2" />
@@ -127,13 +195,13 @@
           <!-- Carousel items -->           
           <div class="carousel-inner">
             <div class="active item" data-project='1'>
-                <img src="http://placehold.it/300x200/888&text=Item 1 Project 1" />
+                <%= image_tag("basement-1.jpg") %>>
             </div>
             <div class="item" data-project='1'>
-                <img src="http://placehold.it/300x200/aaa&text=Item 2 Project 1" />
+                <%= image_tag("basement-2.jpg") %>
             </div>
             <div class="item" data-project='1'>
-                <img src="http://placehold.it/300x200/444&text=Item 3 Project 1" />
+                <%= image_tag("basement-3.jpg") %>
             </div>
           </div>
           <!-- Carousel nav -->
@@ -155,7 +223,7 @@
     </section>  
 
 
-
+<!-- end carousel pictures -->
 
 
 
@@ -451,7 +519,7 @@ myCarousel.bind('slid', function() {
 
 // end theme JS
 
-    
+
 </script>
 
 </html>
