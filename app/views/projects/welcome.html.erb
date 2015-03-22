@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Stylish Portfolio - Start Bootstrap Theme</title>
+    <title>Bennette Sebastian</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -38,7 +38,7 @@
         <ul class="sidebar-nav">
             <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
             <li class="sidebar-brand">
-                <a href="#top">Start Bootstrap</a>
+                <a href="#top">Bennette Sebastian</a>
             </li>
             <li>
                 <a href="#top">Home</a>
@@ -61,10 +61,10 @@
     <!-- Header -->
     <header id="top" class="header">
         <div class="text-vertical-center">
-            <h1>Start Bootstrap</h1>
-            <h3>Free Bootstrap Themes &amp; Templates</h3>
+            <h1>Bennette Sebastian</h1>
+            <h3>Artist Profile&amp; Portfolio</h3>
             <br>
-            <a href="#about" class="btn btn-dark btn-lg">Find Out More</a>
+            <a href="#about" class="btn btn-danger btn-lg">Find Out More</a>
         </div>
     </header>
 
@@ -89,49 +89,51 @@
         <div class="row-fluid feature">
             <div class="col-md-4">
                 <!-- first feature -->
-            <ol class="carousel-linked-projects pagination">
-                <div>
-                <li class="active">
-                    <img src="http://lorempixel.com/200/200/city/1/" alt="Texto Alternativo" class="img-circle img-thumbnail">
-                    <h2>Project 1</h2>
-                    <p>
-                       P1 descrip                    
-                    </p>
-                    <a href="#1" data-project='1' class="btn btn-success lower">See Feature details</a>
-                     </li>
+                <div class="carousel-linked-projects pagination">
+                    <div class="active">
+            
+                        <img src="http://lorempixel.com/200/200/city/1/" alt="Texto Alternativo" class="img-circle img-thumbnail">
+                        <h2>Project 1</h2>
+                        <p>
+                           P1 descrip                    
+                        </p>
+                        <a href="#1" data-project='1' class="btn btn-success lower">Deets</a>
+                    
+                    </div>
+                   
+                    <!-- second feature -->
+                     <div>
+                    
+                        <img src="http://lorempixel.com/200/200/city/2/" alt="Texto Alternativo" class="img-circle img-thumbnail">
+                        <h2>Project 2</h2>
+                        <p>
+                           P2 descript     
+                        </p>
+                        <a href="#2" data-project='2' class="btn btn-success lower">Deets</a>
+                    
+                    </div>
+                    <!-- third feature -->
+                    <div>
+                    
+                        <img src="http://lorempixel.com/200/200/city/3/" alt="Texto Alternativo" class="img-circle img-thumbnail">
+                        <h2>Project 3</h2>
+                        <p>
+                          P3 descrip       
+                        </p>
+                        <a href="#3" data-project='3' class="btn btn-success lower">Deets</a>
+                
+                    </div>
                 </div>
-               
-                <!-- second feature -->
-                 <div>
-                    <li>
-                    <img src="http://lorempixel.com/200/200/city/2/" alt="Texto Alternativo" class="img-circle img-thumbnail">
-                    <h2>Project 2</h2>
-                    <p>
-                       P2 descript     
-                    </p>
-                    <a href="#2" data-project='2' class="btn btn-success lower">See Feature details</a>
-                    </li>
-                </div>
-                <!-- third feature -->
-                <div>
-                    <li>
-                    <img src="http://lorempixel.com/200/200/city/3/" alt="Texto Alternativo" class="img-circle img-thumbnail">
-                    <h2>Project 3</h2>
-                    <p>
-                      P3 descrip       
-                    </p>
-                    <a href="#3" data-project='3' class="btn btn-success lower">See Feature details</a>
-                    </li>
-                </div>
-            </ol>
+          
             </div>
+         </div>
 
             <!-- begin carousel -->
             <div class="col-md-8">
                 <!-- carousel for pictures -->
 
                     <section id="carousel" class="carousel-test">
-                        <div class="row">
+                    <div class="row">
                             <!-- <div class="col-md-8" "col-md-offset-4"> -->
                         <div id="allSlides" style="display:none;">
                             <div class="item" data-project='1'>
@@ -171,7 +173,7 @@
                           <li><a href="#3" data-project='3'>3</a></li>
                         </ol> -->
 
-                        <div id="myCarousel" class="carousel slide">
+                    <div id="myCarousel" class="carousel slide">
                           <!-- Carousel items -->           
                           <div class="carousel-inner">
                             <div class="active item" data-project='1'>
@@ -187,7 +189,7 @@
                           <!-- Carousel nav -->
                           <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
                           <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
-                        </div>
+                    </div>
 
                         <!-- LINKED NAV -->
                         <ol class="carousel-linked-nav pagination">
@@ -199,8 +201,8 @@
 
 
 
-                        </div>
-                        </div>
+                    </div>
+            </div>
                     </section>  
 
 
@@ -216,18 +218,8 @@
     </div>
 
 
+
     <!-- end features list -->
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -386,7 +378,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h4><strong>Start Bootstrap</strong>
+                    <h4><strong>Bennette Sebastian</strong>
                     </h4>
                     <p>3481 Melrose Place<br>Beverly Hills, CA 90210</p>
                     <ul class="list-unstyled">
@@ -432,7 +424,7 @@ $('#myCarousel').carousel({
 
 /* SLIDE ON CLICK */ 
 
-carouselLinkedNav.find('li > ol').click(function() {
+carouselLinkedNav.find('li > a').click(function() {
     var $this = $(this)
     // grab href, remove pound sign, convert to number
       , item = $this.attr('href').substring(1) | 0;
@@ -450,10 +442,10 @@ carouselLinkedNav.find('li > ol').click(function() {
     return false;
 });
 
-carouselLinkedProjects.find(' li > a').click(function() {
+carouselLinkedProjects.find('div > a').click(function() {
     console.log(carouselLinkedProjects.find(' li > a'));
-    carouselLinkedProjects.find('li').removeClass('active')
-    $(this).closest('li').addClass('active')
+    carouselLinkedProjects.find('div').removeClass('active')
+    $(this).closest('div').addClass('active')
     
     var currentProject = $(this).data('project')
     
