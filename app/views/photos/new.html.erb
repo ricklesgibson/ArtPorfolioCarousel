@@ -1,0 +1,16 @@
+         <%= form_for([@project, @photo]) do |f| %>
+
+      <div class="field">
+       
+        <%= f.date_field :photo_date %>
+      </div>
+
+      <div class="field">
+       
+        <%= f.file_field :image %>
+      </div>
+
+      <div class="actions">
+        <%= f.submit %>
+      </div>
+    <% end %>

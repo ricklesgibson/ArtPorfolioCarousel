@@ -1,32 +1,3 @@
-<p id="notice"><%= notice %></p>
-
-<h1>Listing Projects</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @projects.each do |project| %>
-      <tr>
-        <td><%= link_to 'Show', project %></td>
-        <td><%= link_to 'Edit', edit_project_path(project) %></td>
-        <td><%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Project', new_project_path %>
-
-    <%= render "layouts/carousel" %>
-
-    <script>
 var myCarousel = $('#myCarousel')
 , carouselLinkedNav = $('.carousel-linked-nav')
 , carouselLinkedProjects = $('.carousel-linked-projects')
@@ -130,4 +101,3 @@ myCarousel.bind('slid', function() {
     });
 
 // end theme JS
-</script>

@@ -4,3 +4,8 @@
 
 <%= link_to 'Show', @project %> |
 <%= link_to 'Back', projects_path %>
+
+<%= form_for @project do |f| %>
+<%= f.file_field :icon %>
+<%= f.submit "update" %>
+<% end %>
